@@ -1,0 +1,109 @@
+/* Global background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #e0e7ff, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Frosted glass card */
+.container {
+  max-width: 520px;
+  width: 100%;
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  box-shadow:
+    0 30px 60px rgba(79, 70, 229, 0.15),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+  text-align: center;
+  animation: fadeUp 0.8s ease;
+}
+
+/* Title */
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 28px;
+}
+
+/* File input area */
+.file-input {
+  margin-bottom: 26px;
+}
+
+.file-input input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: 2px dashed #c7d2fe;
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-input input:hover {
+  border-color: #6366f1;
+  background: #eef2ff;
+  transform: scale(1.02);
+}
+
+/* CTA Button */
+.upload-button {
+  margin-top: 12px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  cursor: pointer;
+  box-shadow: 0 15px 30px rgba(99, 102, 241, 0.45);
+  transition: all 0.25s ease;
+}
+
+.upload-button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(79, 70, 229, 0.55);
+}
+
+/* Result section */
+.transcription-result {
+  margin-top: 36px;
+}
+
+.transcription-result h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 14px;
+}
+
+/* Result text */
+.transcription-result p {
+  padding: 18px;
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  line-height: 1.7;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
